@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- FONTS  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Lakshmi Hall</title>
+    <link rel="icon"
+        href="https://ik.imagekit.io/y0h8r4hyq/Lakshmi%20Hall/lakshmi%20hall%20(1).png?updatedAt=1726587912139"
+        type="image/png">
+</head>
+
+<style>
+    .poppins {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    @keyframes horizontal-spin {
+        0% {
+            transform: rotateY(0deg);
+        }
+
+        100% {
+            transform: rotateY(360deg);
+        }
+    }
+
+    .animate-horizontal-spin {
+        animation: horizontal-spin 4s linear infinite;
+    }
+</style>
+
+<body>
+    <section id="home">
+        <nav id="navbar" class="fixed top-0 left-0 z-10 w-full h-20 transition duration-300 bg-white shadow-md">
+            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-full">
+                    <!-- JS Mahal Logo -->
+                    <a href="./index.html" class="text-2xl font-bold text-gray-900">
+                        <img src="https://ik.imagekit.io/y0h8r4hyq/Lakshmi%20Hall/lakshmi%20hall%20(1).png?updatedAt=1726587912139" class="w-20 h-30">
+                    </a>
+    
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden">
+                        <button id="sidebarOpen" class="text-black hover:text-yellow-400 focus:outline-none">
+                            <!-- Hamburger icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+    
+                    <!-- Links for Desktop -->
+                    <div class="hidden md:flex md:space-x-8">
+                        <a href="./index.html" class="px-3 py-2 font-medium text-gray-900 transition duration-300 ease-in-out rounded-md hover:text-yellow-400">HOME</a>
+                        <a href="./index.html#about" class="px-3 py-2 font-medium text-gray-900 transition duration-300 ease-in-out rounded-md hover:text-yellow-400">ABOUT US</a>
+                        <a href="./index.html#facilities" class="px-3 py-2 font-medium text-gray-900 transition duration-300 ease-in-out rounded-md hover:text-yellow-400">FACILITIES</a>
+                        <a href="./index.html#amenities" class="px-3 py-2 font-medium text-gray-900 transition duration-300 ease-in-out rounded-md hover:text-yellow-400">AMENITIES</a>
+                        <a href="./index.html#contact" class="px-3 py-2 font-medium text-gray-900 transition duration-300 ease-in-out rounded-md hover:text-yellow-400">CONTACT US</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    
+        <!-- Sidebar for Mobile -->
+        <div id="sidebar" class="fixed inset-0 z-50 w-64 text-white transition-transform duration-300 ease-in-out transform -translate-x-full bg-black md:hidden">
+            <div class="flex items-center justify-between px-4 py-4 border-b border-gray-700">
+                <h2 class="text-lg font-bold">Menu</h2>
+                <!-- Close Button -->
+                <button id="sidebarClose" class="text-white focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="p-4 space-y-4">
+                <a href="./index.html" class="block text-white hover:text-yellow-400">HOME</a>
+                <a href="./index.html#about" class="block text-white hover:text-yellow-400">ABOUT US</a>
+                <a href="./gallery.html" class="block text-white hover:text-yellow-400">GALLERY</a>
+                <a href="./index.html#facilities" class="block text-white hover:text-yellow-400">FACILITIES</a>
+                <a href="./index.html#amenities" class="block text-white hover:text-yellow-400">AMENITIES</a>
+                <a href="./index.html#contact" class="block text-white hover:text-yellow-400">CONTACT US</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Banner or Image Section -->
+    <div class="mt-28"> <!-- Increased margin-top for more space -->
+        <div class="m-8">
+            <!-- New Image Div -->
+            <div class="mb-10 border-2 border-yellow-300 rounded-md">
+            <div class="flex justify-center w-full animate-horizontal-spin ">
+                <img src="https://ik.imagekit.io/y0h8r4hyq/Lakshmi%20Hall/lakshmi%20hall%20(1).png?updatedAt=1726587912139"
+                    alt="JS logo" />
+            </div>
+            <p class="mb-10 text-5xl text-center text-bold poppins">Get into the World of <span
+                    class="text-yellow-300">Lakshmi</span> Hall</p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div >
+                <img class="h-auto max-w-full border-4 border-yellow-300 rounded-lg hover:border-yellow-400"
+                    src="https://ik.imagekit.io/y0h8r4hyq/jsmahal/restarant/img/banner-3.jpg?updatedAt=1724168694383"
+                    alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full border-4 border-yellow-300 rounded-lg hover:border-yellow-400"
+                    src="https://ik.imagekit.io/y0h8r4hyq/jsmahal/restarant/img/banner-1.jpg?updatedAt=1724168694454"
+                    alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full border-4 border-yellow-300 rounded-lg hover:border-yellow-400"
+                    src="https://ik.imagekit.io/y0h8r4hyq/jsmahal/restarant/img/banner-2.jpg?updatedAt=1724168694332"
+                    alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full border-4 border-yellow-300 rounded-lg hover:border-yellow-400"
+                    src="https://ik.imagekit.io/y0h8r4hyq/jsmahal/restarant/img/banner-4.jpg?updatedAt=1724168696976"
+                    alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full border-4 border-yellow-300 rounded-lg hover:border-yellow-400"
+                    src="https://ik.imagekit.io/y0h8r4hyq/jsmahal/restarant/img/banner-10.jpg?updatedAt=1724168698038"
+                    alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full border-4 border-yellow-300 rounded-lg hover:border-yellow-400"
+                    src="https://ik.imagekit.io/y0h8r4hyq/jsmahal/restarant/img/banner-9.jpg?updatedAt=1724168697989"
+                    alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full border-4 border-yellow-300 rounded-lg hover:border-yellow-400"
+                    src="https://ik.imagekit.io/y0h8r4hyq/jsmahal/restarant/img/banner-5.jpg?updatedAt=1724168697235"
+                    alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full border-4 border-yellow-300 rounded-lg hover:border-yellow-400"
+                    src="https://ik.imagekit.io/y0h8r4hyq/jsmahal/restarant/img/banner-6.jpg?updatedAt=1724168697102"
+                    alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full border-4 border-yellow-300 rounded-lg hover:border-yellow-400"
+                    src="https://ik.imagekit.io/y0h8r4hyq/jsmahal/restarant/img/banner-8.jpg?updatedAt=1724168698034"
+                    alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full border-4 border-yellow-300 rounded-lg hover:border-yellow-400"
+                    src="https://ik.imagekit.io/y0h8r4hyq/jsmahal/restarant/img/banner-7.jpg?updatedAt=1724168697604"
+                    alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+    <section id="footer" class="mb-10 text-center mt-14">
+        <div>
+            <p class="text-gray-400 text-md">
+                ©
+                <script>document.write(new Date().getFullYear())</script> Website Designed By
+                <a href="https://www.linkedin.com/in/sivanesan-k03/" class="text-blue-500 hover:underline"
+                    target="_blank">Sivanesan</a> and
+            </p>
+        </div>
+    </section>
+
+</body>
+<script src="./script2.js"></script>
+</html>
