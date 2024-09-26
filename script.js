@@ -2,7 +2,7 @@ let textElement = document.getElementById('animated-text');
 
 
 let texts = [
-  "Welcome to JS Mahal",
+  "Welcome to lakshmi Mahal",
   "Discover Our Gallery",
   "Enjoy Our Amenities",
   "Experience Luxury and Comfort",
